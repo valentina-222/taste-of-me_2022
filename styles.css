@@ -1,0 +1,74 @@
+.contenedor .btn-abrir-popup{
+    padding: 0  20px;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color:aliceblue;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+.contenedor article .btn-abrir-popup:hover{
+    background: rgb(157, 157, 255);
+}
+.overlay{
+    background: rgba(0, 0, 0,.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.overlay.active{
+    visibility: visible;
+}
+.popup{
+    background: floralwhite;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.4);
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    text-align:  center;
+    width: 450px;
+    
+    transition: .3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.popup .btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color:#BBBBBB;
+    transition: .3s ease all;
+}
+.popup .btn-cerrar-popup:hover{
+    color: black;
+}
+.popup h3{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /*opacity: 0;*/
+
+}
+.popup p{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    /*opacity: 0;*/
+
+}
+
+
